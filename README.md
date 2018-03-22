@@ -7,12 +7,12 @@ Komponenten in Docker Containern installliert.
 
 ## Abhänigkeiten
 
-- Docker
+- Docker `apt install docker`
 
 ## Installation
 
-Die Basis bildet der so genannte `yocoto` Container. Dieses Docker Image muss
-zu Erst erstellt werden:
+Die Basis bildet der so genannte `yocto` Container. Dieses Docker Image muss
+zuerst erstellt werden:
 
 ```bash
 cd ./yocoto/
