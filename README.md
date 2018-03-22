@@ -7,7 +7,7 @@ Komponenten in Docker Containern installliert.
 
 ## Abhänigkeiten
 
-- Docker `apt install docker`
+- Docker https://docs.docker.com/install/linux/docker-ce/debian/#set-up-the-repository
 
 ## Installation
 
