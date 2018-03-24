@@ -4,7 +4,7 @@ set -e
 
 cd $(dirname $0)
 
-SHAREDDIR=$PWD/shared
+SHAREDDIR=$PWD/../shared
 CONTAINER=bitbake
 IMAGE=zzeroo/bitbake
 
