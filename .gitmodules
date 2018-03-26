@@ -1,15 +1,12 @@
-[submodule "shared/meta-bsp_lemaker"]
-	path = shared/meta-bsp_lemaker
-	url = https://github.com/zzeroo/meta-bsp_lemaker.git
 [submodule "shared/meta-openembedded"]
 	path = shared/meta-openembedded
 	url = git://git.openembedded.org/meta-openembedded
-[submodule "shared/meta-xmz-mod-touch"]
-	path = shared/meta-xmz-mod-touch
-	url = https://github.com/zzeroo/meta-xmz-mod-touch.git
-[submodule "shared/meta-rust"]
-	path = shared/meta-rust
-	url = https://github.com/meta-rust/meta-rust.git
+[submodule "shared/meta-bsp_lemaker"]
+	path = shared/meta-bsp_lemaker
+	url = https://github.com/zzeroo/meta-bsp_lemaker.git
 [submodule "shared/meta-rust-bin"]
 	path = shared/meta-rust-bin
 	url = https://github.com/zzeroo/meta-rust-bin.git
+[submodule "shared/meta-xmz"]
+	path = shared/meta-xmz
+	url = https://github.com/zzeroo/meta-xmz
