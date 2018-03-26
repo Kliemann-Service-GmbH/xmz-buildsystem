@@ -8,6 +8,7 @@ WORKDIR /home/build
 RUN git clone --depth 1 git://git.yoctoproject.org/poky.git
 
 
-ENTRYPOINT [ "bash", "-c", "cd /home/build/poky && source oe-init-build-env /home/build/shared/build && \
+ENTRYPOINT [ "bash", "-c" ]
+CMD [ "cd /home/build/poky && source oe-init-build-env /home/build/shared/build && \
     bash -l" ]
 # EOF

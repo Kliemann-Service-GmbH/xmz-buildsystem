@@ -9,8 +9,7 @@ CONTAINER=bitbake
 IMAGE=zzeroo/bitbake
 
 # Create, if not present, a shared folder which will be used as working directory.
-[[ -d $SHAREDDIR ]] || mkdir -p $SHAREDDIR
-chmod 777 $SHAREDDIR
+[[ -d $SHAREDDIR ]] || mkdir -p $SHAREDDIR && chmod 777 $SHAREDDIR && chown 30000:300000 $SHAREDDIR
 
 # Try to start an existing/stopped container with the given name $CONTAINER.
 # Otherwise, run a new one.
