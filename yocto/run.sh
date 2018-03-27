@@ -9,7 +9,7 @@ CONTAINER=yocto
 IMAGE=zzeroo/yocto
 
 # Create, if not present, a shared folder which will be used as working directory.
-[[ -d $SHAREDDIR ]] || mkdir -p $SHAREDDIR
+[[ -d $SHAREDDIR ]] || $(mkdir -p $SHAREDDIR && sudo chmod ug=rwX $SHAREDDIR && sudo chown 30000:300000 $SHAREDDIR)
 
 # Try to start an existing/stopped container with the given name $CONTAINER.
 # Otherwise, run a new one.
