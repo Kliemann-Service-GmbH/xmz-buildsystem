@@ -16,7 +16,6 @@ Dieses Verzeichnis enthält verschiedene Docker Conatiner Vorlagen (Dockerfiles)
 - `opkg-shared`
   - dieser Container ist optional, er startet einen einfachen Webserver
     im 'ipk' Verzeichnis (ipk = installierbare Packete)
-
 - `shared`
   - Außerdem ist in dem Verzeichnis des `xmz-buildsystems` der Ordner für die
     gemeinsamen Dateien (Downloads, bitbake cache, artefacts) zu finde.
@@ -30,7 +29,7 @@ Das Buildsystem benötigt:
 ## Installation
 
 Die Reihenfolge in der die Docker Container erstellt werden müssen ist wichtig.
-Begonnen wird mit dem Basis Container 'yocto'.
+Begonnen wird mit dem Basis Container `yocto`.
 
 ### Yocto
 
