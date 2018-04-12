@@ -4,13 +4,13 @@ Installation erzeugt werden kann.
 ## Container bilden
 
 ```bash
-./build.sh
+sh ./build.sh
 ```
 
 ## Container starten
 
 ```bash
-./run.sh
+sh ./run.sh
 ```
 
 

@@ -68,6 +68,36 @@ git submodule init
 git submodule update
 ```
 
+
+# Software build
+
+Es gibt verschiedene Arten wie mit dem Buildsystem gearbeitet werden kann.
+
+## bitbake interactive
+
+Eine Möglichkeit ist die interactive Arbeit mit `bitbake`. Dazu muss docker mit
+dem folgenden Parameter gestartet werden.
+
+```bash
+docker run --volume=/abs/path/to/shared:/home/build/shared --rm -ti zzeroo/bitbake:latest
+```
+
+Dieser Befehl startet eine Bash Shell in der die open-embedded Umgebung bereits
+"gesourced" wurde (siehe [`bitbake` Dockerfile](bitbake/Dockerfile#L12)).
+
+## bitbake scripted
+
+`bitbake` kann im docker Container auch direkt aufgerufen werden. Das ist sehr
+hilfreich wenn man das Buildsystem zum Beispiel in Scripten aufrufen will.
+
+Im Beispiel wird das Rezept `xmz-test-tool-image` mit dem Buildsystem gebaut.
+
+```bash
+docker run --volume=/abs/path/to/shared:/home/build/shared --rm -ti zzeroo/bitbake:latest  "cd /home/build/poky && source oe-init-build-env /home/build/shared/build && bitbake xmz-test-tool-image"
+```
+
+
+
 # Publish Artefacts
 ## last build log
 

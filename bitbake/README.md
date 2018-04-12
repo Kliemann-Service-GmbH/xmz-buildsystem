@@ -8,13 +8,13 @@ wird bitbake konfiguriert.
 ## Container bilden
 
 ```bash
-bash ./build.sh
+sh ./build.sh
 ```
 
 ## Container starten
 
 ```bash
-bash ./run.sh
+sh ./run.sh
 ```
 
 
