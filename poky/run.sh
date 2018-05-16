@@ -1,8 +1,8 @@
 #!/bin/bash
 
-# This script accepts one ore more `bitbake` commands as parameter.
+# This script accepts one ore more `poky` commands as parameter.
 # If the script was called without additional parameters, a interactive
-# `bitbake` session, within the shared dir, is startet.
+# `poky` session, within the shared dir, is startet.
 #
 # Are there additional parameters then these are send to `poky` session.
 
@@ -11,8 +11,8 @@ set -e
 cd $(dirname $0)
 
 SHAREDDIR=$PWD/../shared
-CONTAINER=bitbake
-IMAGE=zzeroo/bitbake
+CONTAINER=poky
+IMAGE=zzeroo/poky
 
 # Create, if not present, a shared folder which will be used as working directory.
 [[ -d $SHAREDDIR ]] || $(mkdir -p $SHAREDDIR && sudo chmod ug=rwX $SHAREDDIR && sudo chown 30000:300000 $SHAREDDIR)

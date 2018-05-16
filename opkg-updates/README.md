@@ -1,7 +1,9 @@
 Dieses Verzeichnis enthält ein Dockerfile mit einem python3 http Server.
 
-Der Webserver wird im shared build directory von yocto/bitbake gestartet, und
-liefert die ipk Packtete zur Installation via `opkg update` / `opkg upgrade`.
+Der Webserver wird im shared build directory von yocto/poky gestartet, und
+stellt die ipk Pakete zur Installation bereit.
+Die Installation erfolgt auf dem Client mit Befehlen wie `opkg update` und
+`opkg upgrade`.
 
 ## Container bilden
 
