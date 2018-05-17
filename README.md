@@ -5,6 +5,25 @@ Das Buildsystem setzt auf yocto/openembedded.
 Zur besseren Trennung der Rechner Infrastruktur werden die einzelnen
 Komponenten in seperaten Docker Containern installliert.
 
+## Quellcode auschecken
+
+Dieses Repository ist Teil der [xMZ-Plattform][xmz]. Es wird empfohlen alle Komponenten
+auszuchecken.
+
+Der Quellcode kann mit folgendem Git Befehl herunter geladen werden.
+Der Parameter `--recursive` sorgt dafür das alle Komponenten (git submodule)
+ebenfalls herunter geladen werden.
+
+```bash
+git clone --recursive https://github.com/Kliemann-Service-GmbH/xMZ-Plattform.git
+```
+
+Alternative kann dieser Teil auch einzeln heruntergeladen werden.
+
+```bash
+git clone https://github.com/Kliemann-Service-GmbH/xmz-buildsystem.git
+```
+
 ## Verzeichnis Layout
 
 Dieses Verzeichnis enthält verschiedene Docker Conatiner Vorlagen so genannte
