@@ -10,6 +10,3 @@
 [submodule "shared/meta-xmz"]
 	path = shared/meta-xmz
 	url = https://github.com/zzeroo/meta-xmz
-[submodule "shared/openembedded-core"]
-	path = shared/openembedded-core
-	url = git://git.openembedded.org/openembedded-core
