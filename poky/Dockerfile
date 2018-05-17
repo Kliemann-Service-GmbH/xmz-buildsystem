@@ -4,8 +4,7 @@ MAINTAINER Stefan  Müller <co@zzeroo.com>
 USER build
 WORKDIR /home/build
 
-# RUN git clone --depth 1 git://git.yoctoproject.org/poky.git --branch sumo
-RUN git clone --depth 1 git://git.yoctoproject.org/poky.git --branch rocko
+RUN git clone --depth 1 git://git.yoctoproject.org/poky.git --branch sumo
 
 
 ENTRYPOINT [ "bash", "-c" ]
